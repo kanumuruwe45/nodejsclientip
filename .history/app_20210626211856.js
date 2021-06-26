@@ -11,7 +11,7 @@ const detector = new DeviceDetector;
 const port = 3000
 
 app.get('/', (req, res) => {
-    // var ipInfo = getIP(req);
+    var ipInfo = getIP(req);
 
     // Code to be written here for getting current ip from client env 
     // console.log(req.ip)
