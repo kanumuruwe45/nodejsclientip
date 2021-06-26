@@ -21,8 +21,8 @@ app.get('/deviceinfo', (req, res) => {
     res.send(temp)
 })
 app.get('/', (req, res) => {
-
-    res.send("Hi to " + req.device.type.toUpperCase() + " User");
+    res.send("/ip")
+    res.send("/deviceinfo")
 })
 
 
@@ -31,3 +31,17 @@ app.listen(port, () => {
 
     console.log(`Example app listening at http://localhost:${port}`)
 })
+
+
+
+var express = require('express');
+var app = express();
+var device = require('express-device');
+app.use(device.capture());
+
+app.get('/hello', function(req, res) {
+    res.send("Hi to " + req.device.type.toUpperCase() + " User");
+});
+
+app.listen(3000);
+console.log("Listening to Port 3000");
