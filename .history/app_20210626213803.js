@@ -21,7 +21,7 @@ app.get('/deviceinfo', (req, res) => {
     res.send(temp)
 })
 app.get('/', (req, res) => {
-    console.log(req.device)
+
     res.send("Hi to " + req.device + " User");
 })
 
