@@ -16,13 +16,9 @@ app.get('/ip', (req, res) => {
 })
 
 
-app.get('/deviceinfo', (req, res) => {
+app.get('/ip', (req, res) => {
 
-    res.send(req.device.type)
-})
-app.get('/', (req, res) => {
-    res.send("/ip")
-    res.send("/deviceinfo")
+    res.send(req.ip)
 })
 
 

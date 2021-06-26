@@ -20,10 +20,6 @@ app.get('/deviceinfo', (req, res) => {
 
     res.send(req.device.type)
 })
-app.get('/', (req, res) => {
-    res.send("/ip")
-    res.send("/deviceinfo")
-})
 
 
 

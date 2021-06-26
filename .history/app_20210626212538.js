@@ -15,18 +15,6 @@ app.get('/ip', (req, res) => {
     res.send(req.ip)
 })
 
-
-app.get('/deviceinfo', (req, res) => {
-
-    res.send(req.device.type)
-})
-app.get('/', (req, res) => {
-    res.send("/ip")
-    res.send("/deviceinfo")
-})
-
-
-
 app.listen(port, () => {
 
     console.log(`Example app listening at http://localhost:${port}`)
