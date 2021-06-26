@@ -18,7 +18,7 @@ app.get('/ip', (req, res) => {
 
 app.get('/deviceinfo', (req, res) => {
     var temp = req.headers['user-agent']
-    res.send(temp)
+    res.send(req.device.type)
 })
 app.get('/', (req, res) => {
     res.send("/ip")
