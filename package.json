@@ -1,17 +1,11 @@
 {
-  "name": "nodejslocalip",
+  "name": "nodejsclient",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "express-device": "^0.4.2",
-    "ipware": "^2.0.0",
-    "node-device-detector": "^1.3.7"
-  }
+  "license": "ISC"
 }
