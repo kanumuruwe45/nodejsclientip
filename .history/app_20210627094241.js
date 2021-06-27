@@ -6,7 +6,8 @@ const port = 3000
 
 app.get('/ip', (req, res) => {
     var hostip = req.ip
-    res.send(hostip.slice(7))
+    console.log(temp.slice(7))
+    res.send(req.ip)
 })
 
 

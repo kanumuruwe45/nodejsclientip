@@ -5,8 +5,9 @@ const app = express()
 const port = 3000
 
 app.get('/ip', (req, res) => {
-    var hostip = req.ip
-    res.send(hostip.slice(7))
+    var temp = "::ffff:223.196.168.45"
+    console.log(temp.slice(7))
+    res.send(req.ip)
 })
 
 
